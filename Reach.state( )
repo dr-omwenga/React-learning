@@ -63,8 +63,10 @@
         }]
       );
       //React.state() gives current data and updator function
-      const chatMessages = array[0];   //tcurrent data. 
-      const setChatMessages = array[1]; //updator function
+/*      const chatMessages = array[0];   //tcurrent data. 
+      const setChatMessages = array[1]; //updator function  */
+     const [chatMessages, setChatMessages] = array;
+
       //clearly, we can use array destructuring shortcut
       // as shown in the next script.  
       function sendMessage(){
